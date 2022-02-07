@@ -12,11 +12,11 @@ You should run "php artisan serve" in command prompt
 
 ## About this project
 This project have 5 pages.
--login page
--home page
--information page
--homecell page
--quote page
+-login page\n
+-home page\n
+-information page\n
+-homecell page\n
+-quote page\n
 
 Live website url: http://www.followsouls.com/
 
