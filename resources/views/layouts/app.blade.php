@@ -41,7 +41,7 @@
                     <ul class="navbar-nav me-auto">
                         
                     </ul>
-                    <div class="fs-4 ps-10 fw-bold text-shadow"> FOLLOW SOULS
+                    <div class="fs-4 ps-10 fw-bold"> FOLLOW SOULS
                     </div>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -86,12 +86,9 @@
             @yield('content')
         </main>
 
-        <div class="footer bg-primary">
+        <div class="footer">
             <div>
-                <div><label class="text-end w-150 mb-2">Name</label> : TRAIT TECHNOLOGY</div>
-                <div><label class="text-end w-150 mb-2">Office</label> : 24 road ExTENTION B AGIP ESTATE rivers state port harcourt Nigeria</div>
-                <div><label class="text-end w-150 mb-2">Phone no</label> : 08 147 189 700</div>
-                <div><label class="text-end w-150 mb-2">Email</label> : traittechworld</div>
+                <div class="text-center">TRAIT TECHNOLOGY</div>
             </div>
         </div>
     </div>

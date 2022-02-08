@@ -7,7 +7,7 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-        <div class="fs-4 text-shadow">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
+        <div class="fs-4">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
             <div class="text-center">
                 <img src="{{asset('img/logo.jpg')}}">
             </div>
@@ -17,20 +17,20 @@
             <div class="">
                 <form action="/information" id="form_information">
                     <div class="d-inline-flex mt-2 mb-2">
-                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{11}" id="value1" placeholder="07405643344" required>
-                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{11}" id="value2">
+                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{9,12}" id="value1" placeholder="07405643344" required>
+                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{9,12}" id="value2">
                     </div>
                     <div class="d-inline-flex mt-2 mb-2">
-                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{11}" id="value3">
-                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{11}" id="value4">
+                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{9,12}" id="value3">
+                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{9,12}" id="value4">
                     </div>
                     <div class="d-inline-flex mt-2 mb-2">
-                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{11}" id="value5">
-                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{11}" id="value6">
+                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{9,12}" id="value5">
+                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{9,12}" id="value6">
                     </div>
                     <div class="d-inline-flex mt-2 mb-2">
-                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{11}" id="value7">
-                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{11}" id="value8">
+                        <input type="tel" class="form-control me-3 rounded-pill" pattern="^[0-9]{9,12}" id="value7">
+                        <input type="tel" class="form-control ms-3 rounded-pill" pattern="^[0-9]{9,12}" id="value8">
                     </div>
                     <div class="mt-3">
                         <button type="submit" class="btn btn-secondary btn-lg rounded-pill" id="submitInfomation">Follow Up</button>
@@ -64,7 +64,7 @@
                 for(i=0;i<8;i++)
                 {
                     if($("#value"+i).val())
-                        numberarray.push($("#value"+i).val());
+                        numberarray.push("+234"+$("#value"+i).val());
                 }
                 submitresult = JSON.stringify(numberarray);
                 // console.log("here" , submitresult);

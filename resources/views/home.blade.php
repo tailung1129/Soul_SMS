@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class=" text-center">
-        <div class="fs-4 text-shadow">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
+        <div class="fs-4">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
             <div class="text-center">
                 <img src="{{asset('img/logo.jpg')}}" class="w-370">
             </div>

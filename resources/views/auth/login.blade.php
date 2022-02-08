@@ -7,7 +7,7 @@
             <img src="{{asset('img/logo.jpg')}}">
         </div> -->
         <div class="col-md-6">
-        <div class="fs-4 text-shadow text-center">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
+        <div class="fs-4 text-center">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
             <div class="text-center">
                 <img src="{{asset('img/logo.jpg')}}">
             </div>
@@ -46,7 +46,7 @@
                     <div class="row mb-3">
                         <div class="col-md-6 offset-md-4">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') != NULL ? 'checked' : '' }}>
 
                                 <label class="form-check-label" for="remember">
                                     {{ __('Remember Me') }}
@@ -60,7 +60,7 @@
                             <button type="submit" class="btn btn-primary rounded-pill col-md-4">
                                 {{ __('SIGN IN') }}
                             </button>
-                            <a class="btn btn-link" href="/forgotpassword">
+                            <a class="btn btn-link" href="{{ route('forget.password.get') }}">
                                 {{ __('forgot password?') }}
                             </a>
                         </div>

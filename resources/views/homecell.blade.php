@@ -7,7 +7,7 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-6 text-center">
-            <div class="fs-4 text-shadow">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
+            <div class="fs-4">“The fruit of the righteous is a tree of life; and he that winneth souls is wise.”</div>
             <div class="text-center">
                 <img src="{{asset('img/logo.jpg')}}">
             </div>
@@ -18,7 +18,7 @@
                 <form id="form_homecell">
                     <div class="mt-2 mb-2 input-group">
                         <label class="col-3 col-form-label text-end me-2">PHONE NUMBER</label>
-                        <input type="tel" class="form-control me-3 rounded-pill" id="homecell_phonenumber_input" pattern="^[0-9]{11}" placeholder="07405643344" required>
+                        <input type="tel" class="form-control me-3 rounded-pill" id="homecell_phonenumber_input" pattern="^[0-9]{9,12}" placeholder="07405643344" required>
                     </div>
                     <div class="mt-2 mb-2 input-group">
                         <span class="col-3 col-form-label text-end me-2">LOCATION</span>
@@ -59,7 +59,8 @@
             if(chk_status)
             {
                 // console.log("here is after validate");
-                var phonenum = $("#homecell_phonenumber_input").val();
+                var phonenum = "+234"+$("#homecell_phonenumber_input").val();
+                // console.log(phonenum);
                 var location = $("#homecell_location_input").val();
                 var district = $("#homecell_district_input").val();
                 var street = $("#homecell_street_input").val();
